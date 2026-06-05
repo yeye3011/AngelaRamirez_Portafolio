@@ -16,7 +16,7 @@ const categories = [
   },
   {
     title: "Ilustraciones",
-    image: "Img/ilustraciones.png",
+    image: "Img/Ilustraciones.png",
     link: "Ilustraciones.html"
   }
 ];
