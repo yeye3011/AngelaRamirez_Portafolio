@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background-image: url("Img/Fondo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: white;
+  opacity: 0.75;
+  z-index: -1;
+}
+
+.visor-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+model-viewer {
+  width: 85vw;
+  height: 85vh;
+  background: transparent;
+}
+
+.header-modelado {
+    position: fixed;
+    top: 40px;
+    left: 60px;
+    z-index: 100;
+}
+
+.btn-back img {
+    width: 80px;
+    height: auto;
+    display: block;
+    transform: rotate(-10deg);
+    transition: transform 0.3s ease;
+}
+
+.btn-back img:hover {
+    transform: rotate(-10deg) scale(1.1);
+}

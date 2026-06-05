@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fotografía</title>
+  <link rel="stylesheet" href="fotografia.css">
+</head>
+
+<body>
+  <div class="background"></div>
+
+  <header class="header-fotografia">
+    <a href="index.html" class="btn-back">
+      <img src="Img/Back2.png" alt="Volver">
+    </a>
+
+    <img src="Img/Tit_Fotografias.png" alt="Fotografía" class="titulo-fotografia">
+  </header>
+
+  <main class="fotografia-page">
+    <section class="galeria-fotos" id="galeriaFotos"></section>
+  </main>
+
+  <div class="modal-foto" id="modalFoto" onclick="cerrarFotoDesdeFondo(event)">
+    <div class="foto-modal-content">
+      <span class="cerrar-foto" onclick="cerrarFoto()">×</span>
+      <img id="fotoActiva" src="" alt="Foto ampliada">
+    </div>
+  </div>
+
+  <script src="fotografia.js"></script>
+</body>
+</html>

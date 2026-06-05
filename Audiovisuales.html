@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audiovisuales</title>
+  <link rel="stylesheet" href="audiovisuales.css">
+</head>
+
+<body>
+  <div class="background"></div>
+
+  <main class="audiovisuales-page">
+
+    <div class="header-audiovisuales">
+      <a href="index.html" class="btn-back">
+        <img src="Img/Back2.png" alt="Volver">
+      </a>
+
+      <img src="Img/Tit_Audiovisuales.png" alt="Audiovisuales" class="titulo-audiovisuales">
+    </div>
+
+    <section class="carousel-container">
+
+      <button class="arrow" onclick="moverCarrusel(-1)">
+        <img src="Img/Arrow_Back.png" alt="Anterior">
+      </button>
+
+      <div class="videos-wrapper" id="videosWrapper"></div>
+
+      <button class="arrow" onclick="moverCarrusel(1)">
+        <img src="Img/Arrow_Next.png" alt="Siguiente">
+      </button>
+
+    </section>
+
+  </main>
+
+  <div class="modal-video" id="modalVideo" onclick="cerrarVideoDesdeFondo(event)">
+    <div class="video-modal-content">
+      <span class="cerrar" onclick="cerrarVideo()">×</span>
+      <video id="videoActivo" controls></video>
+    </div>
+  </div>
+
+  <script src="audiovisuales.js"></script>
+</body>
+</html>

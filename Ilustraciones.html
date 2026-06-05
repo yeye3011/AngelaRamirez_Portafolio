@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilustraciones</title>
+  <link rel="stylesheet" href="ilustraciones.css">
+</head>
+
+<body>
+  <div class="background"></div>
+
+  <main class="ilustraciones-page">
+
+    <div class="header-ilustraciones">
+
+      <a href="index.html" class="btn-back">
+        <img src="Img/Back2.png" alt="Volver">
+      </a>
+
+      <img src="Img/Tit_Ilustraciones.png" alt="Ilustraciones" class="titulo-ilustraciones">
+    </div>
+
+    <section class="carousel-container">
+
+      <button class="arrow" onclick="moverCarrusel(-1)">
+        <img src="Img/Arrow_Back.png" alt="Anterior">
+      </button>
+
+      <div class="ilustraciones-wrapper" id="ilustracionesWrapper"></div>
+
+      <button class="arrow" onclick="moverCarrusel(1)">
+        <img src="Img/Arrow_Next.png" alt="Siguiente">
+      </button>
+
+    </section>
+
+  </main>
+
+  <div class="modal-ilustracion" id="modalIlustracion" onclick="cerrarIlustracionDesdeFondo(event)">
+    <div class="ilustracion-modal-content">
+      <span class="cerrar" onclick="cerrarIlustracion()">×</span>
+      <img id="ilustracionActiva" src="" alt="Ilustración ampliada">
+    </div>
+  </div>
+
+  <script src="ilustraciones.js"></script>
+</body>
+</html>

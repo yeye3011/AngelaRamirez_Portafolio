@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelados 3D</title>
+  <link rel="stylesheet" href="modelados.css">
+</head>
+
+<body>
+  <div class="background"></div>
+
+  <main class="modelados-page">
+
+    <div class="header-modelados">
+      <a href="index.html" class="btn-back">
+        <img src="Img/Back2.png" alt="Volver">
+      </a>
+
+      <img src="Img/Tit_Modelados.png" alt="Modelados 3D" class="titulo-modelados">
+    </div>
+
+    <section class="carousel-container">
+
+      <button class="arrow" onclick="moverCarrusel(-1)">
+        <img src="Img/Arrow_Back.png" alt="Anterior">
+      </button>
+
+      <div class="modelados-wrapper" id="modeladosWrapper"></div>
+
+      <button class="arrow" onclick="moverCarrusel(1)">
+        <img src="Img/Arrow_Next.png" alt="Siguiente">
+      </button>
+
+    </section>
+
+  </main>
+
+  <script src="modelados.js"></script>
+</body>
+</html>
