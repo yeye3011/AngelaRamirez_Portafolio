@@ -1,5 +1,5 @@
 const ilustraciones = [
-  "Material_Ilustraciones/Ilu1.png",
+  "Material_Ilustraciones/ilu1.png",
   "Material_Ilustraciones/Ilu2.jpg",
   "Material_Ilustraciones/Ilu3.jpg",
   "Material_Ilustraciones/Ilu4.png"
